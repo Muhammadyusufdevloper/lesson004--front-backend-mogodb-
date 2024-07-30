@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form-section">
+        <div class="container">
+          <h1 class="form__title">Add New User</h1>
+          <form class="form">
+            <div class="form__boxes">
+              <div class="form__box">
+                <label for="fname" class="form__label">First Name</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="fname"
+                  id="fname"
+                  required
+                />
+              </div>
+              <div class="form__box">
+                <label for="lname" class="form__label">Last Name</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="lname"
+                  id="lname"
+                  required
+                />
+              </div>
+              <div class="form__box">
+                <label for="username" class="form__label">Username</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="username"
+                  id="username"
+                  required
+                />
+              </div>
+              <div class="form__box">
+                <label for="age" class="form__label">Age</label>
+                <input
+                  type="number"
+                  class="form__input"
+                  name="age"
+                  id="age"
+                  required
+                />
+              </div>
+              <div class="form__box">
+                <label for="password" class="form__label">Password</label>
+                <input
+                  type="password"
+                  class="form__input"
+                  name="password"
+                  id="password"
+                  required
+                />
+              </div>
+              <div class="form__box">
+                <label for="image" class="form__label">Image URL</label>
+                <input
+                  type="text"
+                  class="form__input"
+                  name="image"
+                  id="image"
+                />
+              </div>
+            </div>
+            <button type="submit" class="form__submit">Add User</button>
+          </form>
+        </div>
+      </section>
+      <section class="user">
+        <div class="container">
+          <h1 class="user__title">User List</h1>
+          <div class="user__boxes"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
